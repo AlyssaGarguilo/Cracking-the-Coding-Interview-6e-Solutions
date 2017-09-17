@@ -13,12 +13,14 @@ public class Question1_2 {
 		scanner.close();
 	}
 
+	// O(n*lg(n)) sort time; O(n) space complexity
 	public static String sortString(String string) {
 		char[] charString = string.toCharArray();
 		Arrays.sort(charString);
 		return new String(charString);
 	}
 	
+	// O(n) comparison
 	public static boolean isPermutation(String string1, String string2) {
 		if (string1.length() != string2.length())
 			return false;
