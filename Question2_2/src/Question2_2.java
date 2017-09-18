@@ -5,7 +5,10 @@ public class Question2_2 {
 	public static void main(String[] args) {
 		int k = 5;
 		Node kthToLast = findKthToLastElement(k, populateList());
-		System.out.println("Kth to last element's value is " + kthToLast.getValue());
+		if (kthToLast != null)
+			System.out.println("Kth to last element's value is " + kthToLast.getValue());
+		else
+			System.out.println("Given K was larger than size of list");
 	}
 
 	public static Node populateList() {
